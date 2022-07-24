@@ -1,0 +1,202 @@
+
+/*container*/
+#container{
+	grid-template-rows: min(10%,110px) auto;
+	grid-template-columns:  1fr;
+	grid-template-areas:
+	" h "
+	" m ";
+}
+
+/*play-btn*/
+
+.play-btn button[type="button"] i{
+	font-size: max(3vw,2rem);
+}
+
+/*aside*/
+#large-screen-aside{
+	display: none;
+}
+
+/*header*/
+.header-content {
+	height:50%;
+	position: relative;
+}
+
+.header #logo{
+	height: 30%;
+	grid-column: 3;
+}
+
+#search-form-wide-screen {
+	grid-column: 12;
+}
+
+#search-form-small-screen{
+	display: none;
+}
+
+#my-music{
+	font-size: 1.2rem;
+	grid-column: 15;
+	color: var(--textColor);
+	display: block;
+}
+
+#bell {
+	font-size: 1.2rem;
+	grid-column: 18;
+}
+
+#profile-pic {
+	height: 40px;
+	width: 40px;
+	grid-column: 22;
+}
+
+#medium-screen-aside{
+	position: absolute;
+	left: 100%;
+	top: 7rem;
+	width: 50%;
+	display: none;
+	z-index: 1;
+	background-color: var(--footerColor);
+	display: none;
+	transition: transform 0.5s ease-in ;
+}
+
+.aside-content{
+	padding: 1rem;
+	grid-template-rows: 3rem repeat(12, 3rem);
+}
+
+.queue-header{
+	align-self: start;
+	font-size: 1.2rem;
+}
+
+.q-dropdown{
+	grid-row: 1;
+	grid-column: 3;
+	font-size: 0.85rem;
+	font-weight: 500;
+	color: cyan;
+	justify-self: end;
+	align-self: start;
+	width: 80px;
+}
+
+.q-dropdown i{
+	margin-left: 5px;
+}
+
+#close-btn {
+	margin-left: 5px;
+}
+
+#close-btn a{
+	color: var(--textColor);
+}
+
+.q-img{
+	height: 7vw;
+	width: 7vw;
+}
+
+#medium-screen-aside:target{
+	transform: translateX(-100%);
+	display: grid;
+	height: 650px;
+}
+
+
+/*main*/
+#main {
+	grid-template-rows: 2fr 1.5fr repeat(5, 1fr);
+	margin: 0px auto 100px auto;
+}
+
+
+#main > div{
+	width: 100%;
+}
+
+/*carousel*/
+
+#slider{
+	height: 40vw;
+	width: 80vw;
+}
+
+#slider label{
+	width: 56%;
+	height: 100%;
+	left: 15.5vw;
+	top: 15px;
+}
+
+/*-latest release-*/
+
+.lr-menu{
+	justify-self: end;
+}
+
+/*--popular artists--*/
+
+.pa-img{
+	height: 10vw;
+	width:10vw;
+}
+
+#pa-name{
+	margin-top: 0.8rem;
+}
+
+/*albums*/
+.al-pic{
+	height: 10vw;
+	width: 10vw;
+	font-size: 0.8rem;
+}
+
+/*mood*/
+.md-pic{
+	height: 15vw;
+	width: 24vw;
+}
+
+/*latest-eng-hindi*/
+
+.leh-pic{
+	width: 10vw;
+	height: 10vw;
+}
+
+.leh-info{
+	width: 10.5vw;
+	line-height: 1rem;
+}
+
+/*footer*/
+#footer-music{
+	width: 120px;
+	grid-column-gap: 5px;
+}
+
+#footer-info{
+	line-height: 1rem;
+}
+
+#music-icon{
+	font-size: 0.6rem;
+	line-height: 1rem;
+	
+}
+
+.footer-menu-icon{
+	margin: 5px;
+	font-size: 0.8rem;
+}

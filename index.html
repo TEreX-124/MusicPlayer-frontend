@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Music player</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1a0da2d580.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets\index.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="assets\index768.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:576px)" href="assets\index576.css">
+</head>
+<body>
+	<div class="display-logo">
+	</div>
+	<div id="container">
+
+		<div class="header">
+			<div class="header-content">
+				<img id="logo" src="assets\logo ninja studio\logo.jpg">
+				<span id="favourites">Favourites</span>
+				<form action="#" class="search-form" id="search-form-wide-screen">
+					<i class="fas fa-search"></i>
+					<input type="text" name="search" placeholder="Search">
+					<i class="fas fa-microphone"></i>
+				</form>
+				<a href="#medium-screen-aside" id="my-music">
+					<i class="fas fa-music"></i>
+				</a>
+				<i id="bell" class="fas fa-bell"></i>
+				<div id="profile-pic"></div>
+			</div>
+			<div class="aside-content" id="medium-screen-aside">
+						<div class="queue-header">
+							My playlist 
+						</div>
+						<span class="q-dropdown">Queue<i class="fas fa-chevron-down"></i>
+							<div class="q-dropdown-menu">
+								<div class="q-dropdown-item">
+									Playlists
+								</div>
+								<div class="q-dropdown-item">
+									Favourite Songs
+								</div>
+							</div>
+						<span id="close-btn">
+							<a href="#">X</a>
+						</span>
+						</span>
+						<div class="queue-song" id="queue-song1">
+							<div class="sno">01</div>
+							<div id="q1" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song2">
+							<div class="sno">02</div>
+							<div id="q2" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song3">
+							<div class="sno">03</div>
+							<div id="q3" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song4">
+							<div class="sno">04</div>
+							<div id="q4" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song5">
+							<div class="sno">05</div>
+							<div id="q5" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song6">
+							<div class="sno">06</div>
+							<div id="q6" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song7">
+							<div class="sno">07</div>
+							<div id="q7" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song8">
+							<div class="sno">08</div>
+							<div id="q8" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song9">
+							<div class="sno">09</div>
+							<div id="q9" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song10">
+							<div class="sno">10</div>
+							<div id="q10" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song11">
+							<div class="sno">11</div>
+							<div id="q11" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song12">
+							<div class="sno">12</div>
+							<div id="q12" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+			<div id="search-bar">
+				<form action="#" id="search-form-small-screen" class="search-form">
+						<i class="fas fa-search"></i>
+						<input type="text" name="search" placeholder="Search">
+						<i class="fas fa-microphone"></i>
+				</form>
+				<div class="playlist-btn">
+					<span>My Playlist</span>
+					<div class="aside-content" id="small-screen-aside">
+						<div class="queue-header">
+							My playlist 
+						</div>
+						<span class="q-dropdown">Queue<i class="fas fa-chevron-down"></i>
+							<div class="q-dropdown-menu">
+								<div class="q-dropdown-item">
+									Playlists
+								</div>
+								<div class="q-dropdown-item">
+									Favourite Songs
+								</div>
+							</div>
+						</span>
+						<div class="queue-song" id="queue-song1">
+							<div class="sno">01</div>
+							<div id="q1" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song2">
+							<div class="sno">02</div>
+							<div id="q2" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song3">
+							<div class="sno">03</div>
+							<div id="q3" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song4">
+							<div class="sno">04</div>
+							<div id="q4" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song5">
+							<div class="sno">05</div>
+							<div id="q5" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song6">
+							<div class="sno">06</div>
+							<div id="q6" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song7">
+							<div class="sno">07</div>
+							<div id="q7" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song8">
+							<div class="sno">08</div>
+							<div id="q8" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song9">
+							<div class="sno">09</div>
+							<div id="q9" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song10">
+							<div class="sno">10</div>
+							<div id="q10" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song11">
+							<div class="sno">11</div>
+							<div id="q11" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+						<div class="queue-song" id="queue-song12">
+							<div class="sno">12</div>
+							<div id="q12" class="q-img play-btn">
+								<button type="button"><i class="fas fa-play-circle"></i></button>
+							</div>
+							<div class="q-info">
+								Onism<br>
+								Else
+							</div>
+							<div class="heart">
+								<i class="far fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div id="header-gradient" class="gradient"></div>
+		</div>
+
+		<div id="main">
+			<div id="slider">
+				<input type="radio" name="slider" id="s1">
+				<input type="radio" name="slider" id="s2">
+				<input type="radio" name="slider" id="s3">
+				<input type="radio" name="slider" id="s4">
+				<input type="radio" name="slider" id="s5">
+
+				<label for="s1" id="slide1">
+					<img src="assets\carousel\img1.jpg" height="100%" width="100%">
+				</label>
+				<label for="s2" id="slide2">
+					<img src="assets\carousel\img2.jpg" height="100%" width="100%">
+				</label>
+				<label for="s3" id="slide3">
+					<img src="assets\carousel\img3.jpg" height="100%" width="100%">
+				</label>
+				<label for="s4" id="slide4">
+					<img src="assets\carousel\img4.jpg" height="100%" width="100%">
+				</label>
+				<label for="s5" id="slide5">
+					<img src="assets\carousel\img5.jpg" height="100%" width="100%">
+				</label>
+			</div>
+			<div id="latest-release" >
+				 <header class="section-header">
+				 	Latest Release
+				 </header>
+				 		<div class=" lr-img play-btn">
+						 <button  type="button"><i class="fas fa-play-circle"></i></button>
+						</div>
+						<div class="lr-img play-btn">
+						 <button type="button"><i class="fas fa-play-circle"></i></button>
+						</div>
+						<div class=" lr-img play-btn">
+						 <button type="button"><i class="fas fa-play-circle"></i></button>
+						</div>
+						<div class="lr-img play-btn">
+						 <button type="button"><i class="fas fa-play-circle"></i></button>
+						</div>
+				 <div id="lri1" class="lr-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lri2" class="lr-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lri3" class="lr-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lri4" class="lr-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lrm1" class="lr-menu">
+				 	<i class="fas fa-ellipsis-h"></i><br>
+				 	4:44
+				 </div>
+				 <div id="lrm2" class="lr-menu">
+				 	<i class="fas fa-ellipsis-h"></i><br>
+				 	4:44
+				 </div>
+				 <div id="lrm3" class="lr-menu">
+				 	<i class="fas fa-ellipsis-h"></i><br>
+				 	4:44
+				 </div>
+				 <div id="lrm4" class="lr-menu">
+				 	<i class="fas fa-ellipsis-h"></i><br>
+				 	4:44
+				 </div>
+			</div>
+			<div id="popular-artist">
+				<header class="section-header">
+					Popular Artists
+				</header>
+				<section id="pa-display">
+					<a href="artist_page.html" target="_blank" id="pa1" class="pa-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</a>
+					<a href="artist_page.html" target="_blank" id="pa2" class="pa-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</a>
+					<a href="artist_page.html" target="_blank" id="pa3" class="pa-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</a>
+					<a href="artist_page.html" target="_blank" id="pa4" class="pa-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</a>
+					<a href="artist_page.html" target="_blank" id="pa5" class="pa-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</a>
+					<a href="artist_page.html" target="_blank" id="pa6" class="pa-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</a>
+				</section>
+				<section id="pa-name">
+					<div>
+						Ed Sheeran
+					</div>
+					<div>
+						ColdPlay
+					</div>
+					<div>
+						Zayan
+					</div>
+					<div>
+						Charlie Puth
+					</div>
+					<div>
+						Imagine Dragon
+					</div>
+					<div>
+						Drake
+					</div>
+				</section>
+			</div>
+			<div id="albums">
+				<div id="al1" class="al-pic play-btn"><span>love</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="al2" class="al-pic play-btn"><span>Retro</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="al3" class="al-pic play-btn"><span>Chill</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="al4" class="al-pic play-btn"><span>Workout</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="al5" class="al-pic play-btn"><span>Rock</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="al6" class="al-pic play-btn"><span>Pop</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+			</div>
+			<div id="mood">
+				<div id="md1" class="md-pic play-btn"><span>Party</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="md2" class="md-pic play-btn"><span>Electronic</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="md3" class="md-pic play-btn"><span>Road Trip</span>
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+			</div>
+			<div id="latest-english">
+				<header class="section-header">
+					Latest English
+				</header>
+				<div id="le1" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="le2" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="le3" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="le4" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="le5" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="le6" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lei1" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lei2" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lei3" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lei4" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lei5" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lei6" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+			</div>
+			<div id="latest-hindi">
+				<header class="section-header">
+					Latest Hindi
+				</header>
+				<div id="lh1" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lh2" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lh3" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lh4" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lh5" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lh6" class="leh-pic play-btn">
+					<button type="button"><i class="fas fa-play-circle"></i></button>
+				</div>
+				<div id="lhi1" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lhi2" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lhi3" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lhi4" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lhi5" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+				 <div id="lhi6" class="leh-info">
+				 	Onism<br>
+				 	AUG 11, 2017
+				 </div>
+			</div>
+		</div>
+
+		<div class="aside" id="large-screen-aside">
+			<div class="aside-content">
+				<div class="queue-header">
+					My playlist 
+				</div>
+				<span class="q-dropdown">Queue<i class="fas fa-chevron-down"></i>
+					<div class="q-dropdown-menu">
+						<div class="q-dropdown-item">
+							Playlists
+						</div>
+						<div class="q-dropdown-item">
+							Favourite Songs
+						</div>
+					</div>
+				</span>
+				<div class="queue-song" id="queue-song1">
+					<div class="sno">01</div>
+					<div id="q1" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song2">
+					<div class="sno">02</div>
+					<div id="q2" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song3">
+					<div class="sno">03</div>
+					<div id="q3" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song4">
+					<div class="sno">04</div>
+					<div id="q4" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song5">
+					<div class="sno">05</div>
+					<div id="q5" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song6">
+					<div class="sno">06</div>
+					<div id="q6" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song7">
+					<div class="sno">07</div>
+					<div id="q7" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song8">
+					<div class="sno">08</div>
+					<div id="q8" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song9">
+					<div class="sno">09</div>
+					<div id="q9" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song10">
+					<div class="sno">10</div>
+					<div id="q10" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song11">
+					<div class="sno">11</div>
+					<div id="q11" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+				<div class="queue-song" id="queue-song12">
+					<div class="sno">12</div>
+					<div id="q12" class="q-img play-btn">
+						<button type="button"><i class="fas fa-play-circle"></i></button>
+					</div>
+					<div class="q-info">
+						Onism<br>
+						Else
+					</div>
+					<div class="heart">
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+			<div id="footer-gradient" class="gradient"></div>
+			<div id="footer-music">
+				<div id="footer-img"></div>
+				<div id="footer-info">
+					Onism<br>
+					Dua lipa
+				</div>
+				<div id="music-icon">
+					<i class="far fa-heart"></i>
+					<span><i class="fas fa-ban"></i></span>
+				</div>
+			</div>
+			<div id="footer-controls">
+				<div id="control-icons">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-step-backward"></i>
+					<i class="far fa-pause-circle"></i>
+					<i class="fas fa-step-forward"></i>
+					<i class="fas fa-retweet"></i>
+				</div>
+				<div id="control-timeline" class="music-timeline">
+					<div></div>
+					<i class="fas fa-circle"></i>
+				</div>
+			</div>
+			<div id="footer-menu">
+				<i class="fas fa-bars footer-menu-icon"></i>
+				<i class="fas fa-volume-up footer-menu-icon"></i>
+				<div id="volume-bar" class="music-timeline">
+					<div></div>
+					<i class="fas fa-circle"></i>
+				</div>
+				<i class="fas fa-expand-alt footer-menu-icon"></i>
+			</div>
+	</div>
+</body>
+</html>
